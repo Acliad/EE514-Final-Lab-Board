@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "EE514 Board")(type KiCad)(uri "${KIPRJMOD}/libraries/EE514 Board.pretty")(options "")(descr ""))
+)

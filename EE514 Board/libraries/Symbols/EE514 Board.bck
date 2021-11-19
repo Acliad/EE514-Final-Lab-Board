@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Q_NPN_BECE
+D NPN transistor, base/emitter/collector/emitter
+K transistor NPN
+F ~
+$ENDCMP
+#
+#End Doc Library

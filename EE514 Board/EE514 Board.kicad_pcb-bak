@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 39)
+    (drawings 44)
     (tracks 227)
     (zones 0)
     (modules 54)
@@ -66,6 +66,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
+    (grid_origin 94.996 127.508)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -91,7 +92,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
@@ -173,8 +174,102 @@
     (add_net "Net-(U501-Pad8)")
   )
 
+  (module "EE514 Board:C_1pF_Interdigital" (layer F.Cu) (tedit 619826A4) (tstamp 61983999)
+    (at 169.56532 96.5327 180)
+    (descr "1 pF interdigital capacitor (Advanced Circuits FR4)")
+    (path /619CBABE/619D33FC)
+    (fp_text reference C303 (at 0 5.8547) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pF (at 0.1016 5.842) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_poly (pts (xy 1.44272 4.3307) (xy -1.44272 4.3307) (xy -1.44272 -0.127) (xy 1.44272 -0.127)) (layer F.Mask) (width 0.1))
+    (pad 2 smd custom (at 0 4.2037 180) (size 2.7813 0.1524) (layers F.Cu F.Mask)
+      (net 3 GND) (zone_connect 0)
+      (options (clearance outline) (anchor rect))
+      (primitives
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
+      ))
+    (pad 1 smd custom (at 0 0) (size 2.7813 0.1524) (layers F.Cu F.Mask)
+      (net 11 "Net-(C303-Pad1)") (zone_connect 0)
+      (options (clearance outline) (anchor rect))
+      (primitives
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
+      ))
+  )
+
+  (module "EE514 Board:C_1pF_Interdigital" (layer F.Cu) (tedit 61982686) (tstamp 6198888D)
+    (at 166.77386 98.58248)
+    (descr "1 pF interdigital capacitor (Advanced Circuits FR4)")
+    (path /619CBABE/619D53B8)
+    (fp_text reference C302 (at -0.02286 5.93852) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pF (at 0.1016 5.842) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_poly (pts (xy 1.44272 4.3307) (xy -1.44272 4.3307) (xy -1.44272 -0.127) (xy 1.44272 -0.127)) (layer F.Mask) (width 0.1))
+    (pad 2 smd custom (at 0 4.2037) (size 2.7813 0.1524) (layers F.Cu F.Mask)
+      (net 3 GND) (zone_connect 0)
+      (options (clearance outline) (anchor rect))
+      (primitives
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
+      ))
+    (pad 1 smd custom (at 0 0 180) (size 2.7813 0.1524) (layers F.Cu F.Mask)
+      (net 10 "Net-(C302-Pad1)") (zone_connect 0)
+      (options (clearance outline) (anchor rect))
+      (primitives
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
+        (gr_poly (pts
+           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
+      ))
+  )
+
   (module irex_Aesthetic:Logo_irex_5.0x5.5mm_Copper (layer F.Cu) (tedit 5F9E28E2) (tstamp 61987A81)
-    (at 106.553 93.98)
+    (at 109.728 93.218)
     (fp_text reference G*** (at -0.19 -4.12) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -234,98 +329,6 @@
       (xy -2.195621 1.470396) (xy -2.009141 1.362699) (xy -1.775985 1.270475) (xy -1.635755 1.228854)
       (xy -1.523017 1.19939) (xy -1.433627 1.177368) (xy -1.379497 1.165648) (xy -1.368882 1.16478)
       (xy -1.357232 1.192008)) (layer F.Cu) (width 0.01))
-  )
-
-  (module "EE514 Board:C_1pF_Interdigital" (layer F.Cu) (tedit 61979C26) (tstamp 61983999)
-    (at 169.56532 96.5327 180)
-    (descr "1 pF interdigital capacitor (Advanced Circuits FR4)")
-    (path /619CBABE/619D33FC)
-    (fp_text reference C303 (at 0 5.8547) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value 1pF (at 0.1016 5.842) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 2 smd custom (at 0 4.2037 180) (size 2.7813 0.1524) (layers F.Cu F.Mask)
-      (net 3 GND) (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
-      ))
-    (pad 1 smd custom (at 0 0) (size 2.7813 0.1524) (layers F.Cu F.Mask)
-      (net 11 "Net-(C303-Pad1)") (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
-      ))
-  )
-
-  (module "EE514 Board:C_1pF_Interdigital" (layer F.Cu) (tedit 61979C26) (tstamp 619839A8)
-    (at 166.77386 98.58248)
-    (descr "1 pF interdigital capacitor (Advanced Circuits FR4)")
-    (path /619CBABE/619D53B8)
-    (fp_text reference C302 (at -0.02286 5.68452) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value 1pF (at 0.1016 5.842) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 2 smd custom (at 0 4.2037) (size 2.7813 0.1524) (layers F.Cu F.Mask)
-      (net 3 GND) (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
-      ))
-    (pad 1 smd custom (at 0 0 180) (size 2.7813 0.1524) (layers F.Cu F.Mask)
-      (net 10 "Net-(C302-Pad1)") (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 -3.3782) (xy -1.23825 -3.3782) (xy -1.23825 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.80645 -0.6858) (xy -0.80645 -3.3782) (xy -0.65405 -3.3782) (xy -0.65405 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -0.22225 -0.6858) (xy -0.22225 -3.3782) (xy -0.06985 -3.3782) (xy -0.06985 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.36195 -0.6858) (xy 0.36195 -3.3782) (xy 0.51435 -3.3782) (xy 0.51435 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy 0.94615 -0.6858) (xy 0.94615 -3.3782) (xy 1.09855 -3.3782) (xy 1.09855 -0.6858)) (width 0))
-        (gr_poly (pts
-           (xy -1.39065 -0.6858) (xy -1.39065 0.0762) (xy 1.39065 0.0762) (xy 1.39065 -0.6858)) (width 0))
-      ))
   )
 
   (module "EE514 Board:Filter_2.0GHz_Bandpass_Edge-Coupled" (layer F.Cu) (tedit 619752CF) (tstamp 6197AD79)
@@ -2334,6 +2337,23 @@
     )
   )
 
+  (gr_line (start 185.108 66.294) (end 171.704 66.294) (layer F.Mask) (width 3.2702) (tstamp 2B5))
+  (gr_line (start 97.594 77.978) (end 107.088938 77.978) (layer F.Mask) (width 3.2702) (tstamp 254))
+  (gr_line (start 107.088938 77.978) (end 111.506 77.978) (layer F.Mask) (width 3.2702) (tstamp 254))
+  (gr_text 5V (at 103.378 99.314 270) (layer F.SilkS) (tstamp 6198896F)
+    (effects (font (size 0.889 0.889) (thickness 0.22225)))
+  )
+  (gr_text GND (at 103.378 95.504 270) (layer F.SilkS)
+    (effects (font (size 0.889 0.889) (thickness 0.22225)))
+  )
+  (gr_text "5V DC" (at 98.806 104.902 270) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_line (start 97.594 118.11) (end 113.157 118.11) (layer F.Mask) (width 3.2702) (tstamp 585))
+  (gr_line (start 141.5542 119.6848) (end 126.6952 119.6848) (layer F.Mask) (width 3.2702) (tstamp 5E6))
+  (gr_line (start 143.129 118.11) (end 141.5542 119.6848) (layer F.Mask) (width 3.2702) (tstamp 5E6))
+  (gr_line (start 185.0318 118.11) (end 143.129 118.11) (layer F.Mask) (width 3.2702) (tstamp 5E6))
+  (gr_line (start 126.6952 119.6848) (end 125.476 119.6848) (layer F.Mask) (width 0.7048) (tstamp 5E6))
   (gr_text "Isaac Rex\nRev0" (at 172.593 125.222) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -2367,20 +2387,14 @@
   (gr_line (start 187.452 85.344) (end 95.504 85.344) (layer F.SilkS) (width 0.2032))
   (gr_line (start 162.56 88.138) (end 187.452 88.138) (layer F.SilkS) (width 0.2032))
   (gr_line (start 187.452 108.204) (end 162.56 108.204) (layer F.SilkS) (width 0.2032) (tstamp 6197E913))
-  (gr_line (start 185.108 66.294) (end 172.0016 66.294) (layer F.Mask) (width 3.048))
-  (gr_line (start 97.594 77.978) (end 111.4116 77.978) (layer F.Mask) (width 3.048))
-  (gr_poly (pts (xy 113.6904 116.7384) (xy 115.951 117.5766) (xy 116.8654 117.5766) (xy 116.8654 119.507) (xy 113.1316 119.5832) (xy 112.4458 119.5578) (xy 112.4458 116.6368)) (layer F.Mask) (width 0.1))
-  (gr_line (start 97.594 118.11) (end 113.157 118.11) (layer F.Mask) (width 3.048))
+  (gr_poly (pts (xy 113.7412 116.6368) (xy 115.96116 117.46992) (xy 116.8654 117.48008) (xy 116.8654 119.6086) (xy 113.16208 119.69496) (xy 112.4458 119.5578) (xy 112.4458 116.6368)) (layer F.Mask) (width 0.1))
   (gr_poly (pts (xy 175.7934 99.949) (xy 175.0314 99.949) (xy 171.6786 99.0092) (xy 171.6786 98.0694) (xy 175.0314 97.0534) (xy 175.7934 97.028)) (layer F.Mask) (width 0.1))
   (gr_line (start 185.0318 98.5012) (end 175.3108 98.5012) (layer F.Mask) (width 3.048))
   (gr_arc (start 185.42 124.968) (end 185.42 127.508) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 619870A0))
   (gr_arc (start 185.42 60.198) (end 187.96 60.198) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 619870A0))
   (gr_arc (start 97.536 60.198) (end 97.536 57.658) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 619870A0))
   (gr_arc (start 97.536 124.968) (end 94.996 124.968) (angle -90) (layer Edge.Cuts) (width 0.05))
-  (gr_poly (pts (xy 126.873 121.158) (xy 126.3142 121.158) (xy 123.3424 120.142) (xy 123.3424 119.2022) (xy 126.4158 118.237) (xy 126.873 118.237)) (layer F.Mask) (width 0.1))
-  (gr_line (start 143.129 118.11) (end 184.912 118.11) (layer F.Mask) (width 3.048))
-  (gr_line (start 143.129 118.11) (end 141.5542 119.6848) (layer F.Mask) (width 3.048))
-  (gr_line (start 126.746 119.6848) (end 141.478 119.6848) (layer F.Mask) (width 3.048))
+  (gr_poly (pts (xy 126.873 121.158) (xy 126.3142 121.22404) (xy 123.3424 120.20804) (xy 123.3424 119.09044) (xy 126.4158 118.12524) (xy 126.873 118.237)) (layer F.Mask) (width 0.1))
   (gr_line (start 185.42 57.658) (end 97.536 57.658) (layer Edge.Cuts) (width 0.05) (tstamp 6197D860))
   (gr_line (start 187.96 124.968) (end 187.96 60.198) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 97.536 127.508) (end 185.42 127.508) (layer Edge.Cuts) (width 0.05) (tstamp 61986010))
@@ -2503,9 +2517,9 @@
   (segment (start 125.476 119.6848) (end 125.349 119.6848) (width 0.3048) (layer F.Cu) (net 8))
   (segment (start 125.4614 119.6702) (end 125.476 119.6848) (width 0.3048) (layer F.Cu) (net 8))
   (segment (start 126.6952 119.6848) (end 125.476 119.6848) (width 0.3048) (layer F.Cu) (net 8))
-  (segment (start 141.5542 119.6848) (end 126.6952 119.6848) (width 2.8702) (layer F.Cu) (net 8))
-  (segment (start 143.129 118.11) (end 141.5542 119.6848) (width 2.8702) (layer F.Cu) (net 8))
   (segment (start 185.0318 118.11) (end 143.129 118.11) (width 2.8702) (layer F.Cu) (net 8))
+  (segment (start 143.129 118.11) (end 141.5542 119.6848) (width 2.8702) (layer F.Cu) (net 8))
+  (segment (start 141.5542 119.6848) (end 126.6952 119.6848) (width 2.8702) (layer F.Cu) (net 8))
   (segment (start 162.4457 95.17762) (end 162.45712 95.18904) (width 0.3048) (layer F.Cu) (net 9) (tstamp 61983A5B))
   (segment (start 162.4457 94.22702) (end 162.4457 95.17762) (width 0.3048) (layer F.Cu) (net 9) (tstamp 61983A79))
   (segment (start 162.45712 96.1352) (end 162.45586 96.13646) (width 0.3048) (layer F.Cu) (net 9) (tstamp 61983A25))
@@ -2614,7 +2628,7 @@
   (segment (start 107.088938 77.978) (end 109.613699 77.978) (width 2.8702) (layer F.Cu) (net 33))
   (segment (start 97.594 77.978) (end 107.088938 77.978) (width 2.8702) (layer F.Cu) (net 33))
 
-  (zone (net 14) (net_name /Oscillator/RF_OUT) (layer F.Cu) (tstamp 61983C91) (hatch edge 0.508)
+  (zone (net 14) (net_name /Oscillator/RF_OUT) (layer F.Cu) (tstamp 61987C2C) (hatch edge 0.508)
     (priority 10)
     (connect_pads yes (clearance 0.2032))
     (min_thickness 0.254)
@@ -2630,7 +2644,7 @@
       )
     )
   )
-  (zone (net 8) (net_name /Amplifier/RF_OUT) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 8) (net_name /Amplifier/RF_OUT) (layer F.Cu) (tstamp 61987C29) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2645,7 +2659,7 @@
       )
     )
   )
-  (zone (net 1) (net_name /Amplifier/RF_IN) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name /Amplifier/RF_IN) (layer F.Cu) (tstamp 61987C26) (hatch edge 0.508)
     (priority 10)
     (connect_pads yes (clearance 0.2032))
     (min_thickness 0.254)
@@ -2661,7 +2675,7 @@
       )
     )
   )
-  (zone (net 33) (net_name /FILT_IN) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 33) (net_name /FILT_IN) (layer F.Cu) (tstamp 61987C23) (hatch edge 0.508)
     (priority 10)
     (connect_pads yes (clearance 0.2032))
     (min_thickness 0.254)
@@ -2679,7 +2693,7 @@
       )
     )
   )
-  (zone (net 32) (net_name /FILT_OUT) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 32) (net_name /FILT_OUT) (layer F.Cu) (tstamp 61987C20) (hatch edge 0.508)
     (priority 10)
     (connect_pads yes (clearance 0.2032))
     (min_thickness 0.254)
@@ -2697,7 +2711,7 @@
       )
     )
   )
-  (zone (net 3) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 3) (net_name GND) (layer B.Cu) (tstamp 61987C1D) (hatch edge 0.508)
     (priority 10)
     (connect_pads yes (clearance 0.2032))
     (min_thickness 0.254)
@@ -2714,13 +2728,13 @@
         (xy 187.438373 125.799915) (xy 187.238348 126.176108) (xy 186.969064 126.506282) (xy 186.64077 126.77787) (xy 186.265984 126.980516)
         (xy 185.85897 127.106508) (xy 185.418529 127.1528) (xy 97.553375 127.1528) (xy 97.111967 127.109519) (xy 96.704085 126.986373)
         (xy 96.327892 126.786348) (xy 95.997718 126.517064) (xy 95.72613 126.18877) (xy 95.523484 125.813984) (xy 95.397492 125.40697)
-        (xy 95.3512 124.966529) (xy 95.3512 98.670062) (xy 97.0956 98.670062) (xy 97.0956 98.941938) (xy 97.148641 99.208589)
-        (xy 97.252683 99.45977) (xy 97.403729 99.685826) (xy 97.595974 99.878071) (xy 97.82203 100.029117) (xy 98.073211 100.133159)
-        (xy 98.339862 100.1862) (xy 98.611738 100.1862) (xy 98.878389 100.133159) (xy 99.12957 100.029117) (xy 99.355626 99.878071)
-        (xy 99.547871 99.685826) (xy 99.698917 99.45977) (xy 99.802959 99.208589) (xy 99.856 98.941938) (xy 99.856 98.670062)
-        (xy 99.802959 98.403411) (xy 99.698917 98.15223) (xy 99.547871 97.926174) (xy 99.355626 97.733929) (xy 99.12957 97.582883)
-        (xy 98.878389 97.478841) (xy 98.611738 97.4258) (xy 98.339862 97.4258) (xy 98.073211 97.478841) (xy 97.82203 97.582883)
-        (xy 97.595974 97.733929) (xy 97.403729 97.926174) (xy 97.252683 98.15223) (xy 97.148641 98.403411) (xy 97.0956 98.670062)
+        (xy 95.3512 124.966529) (xy 95.3512 98.670062) (xy 97.4258 98.670062) (xy 97.4258 98.941938) (xy 97.478841 99.208589)
+        (xy 97.582883 99.45977) (xy 97.733929 99.685826) (xy 97.926174 99.878071) (xy 98.15223 100.029117) (xy 98.403411 100.133159)
+        (xy 98.670062 100.1862) (xy 98.941938 100.1862) (xy 99.208589 100.133159) (xy 99.45977 100.029117) (xy 99.685826 99.878071)
+        (xy 99.878071 99.685826) (xy 100.029117 99.45977) (xy 100.133159 99.208589) (xy 100.1862 98.941938) (xy 100.1862 98.670062)
+        (xy 100.133159 98.403411) (xy 100.029117 98.15223) (xy 99.878071 97.926174) (xy 99.685826 97.733929) (xy 99.45977 97.582883)
+        (xy 99.208589 97.478841) (xy 98.941938 97.4258) (xy 98.670062 97.4258) (xy 98.403411 97.478841) (xy 98.15223 97.582883)
+        (xy 97.926174 97.733929) (xy 97.733929 97.926174) (xy 97.582883 98.15223) (xy 97.478841 98.403411) (xy 97.4258 98.670062)
         (xy 95.3512 98.670062) (xy 95.3512 60.215375) (xy 95.39448 59.773967) (xy 95.517626 59.366087) (xy 95.717654 58.989891)
         (xy 95.986936 58.659718) (xy 96.31523 58.38813) (xy 96.690014 58.185485) (xy 97.09703 58.059492) (xy 97.537472 58.0132)
         (xy 185.402625 58.0132)

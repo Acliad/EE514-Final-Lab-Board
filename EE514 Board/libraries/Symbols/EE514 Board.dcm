@@ -5,6 +5,12 @@ D Generic 2-pin band-pass-filter symbol
 K filter bandpass band-pass band
 $ENDCMP
 #
+$CMP C_interdigital
+D Interdigital grounded capacitor
+K cap capacitor interdigital
+F ~
+$ENDCMP
+#
 $CMP Q_NPN_BECE
 D NPN transistor, base/emitter/collector/emitter
 K transistor NPN

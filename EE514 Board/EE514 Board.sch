@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date "2021-11-18"
 Rev ""
@@ -14,31 +14,307 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 7900 4250 2800 1700
+S 7500 3650 2800 1700
 U 6196B9B8
 F0 "Amplifier" 50
 F1 "Amplifier.sch" 50
-F2 "V_BIAS_BASE" I L 7900 4700 50 
-F3 "V_BIAS_COLLECTOR" I L 7900 4450 50 
+F2 "V_BIAS_BASE" I L 7500 4100 50 
+F3 "V_BIAS_COLLECTOR" I L 7500 3850 50 
+F4 "RF_IN" I L 7500 4950 50 
+F5 "RF_OUT" O R 10300 4950 50 
 $EndSheet
 $Sheet
-S 7900 7400 2800 1750
+S 7500 6800 2800 1750
 U 619CBABE
 F0 "Oscillator" 50
 F1 "Oscillator.sch" 50
-F2 "V_BIAS_BASE" I L 7900 7850 50 
-F3 "V_BIAS_COLLECTOR" I L 7900 7600 50 
+F2 "V_BIAS_BASE" I L 7500 7250 50 
+F3 "V_BIAS_COLLECTOR" I L 7500 7000 50 
+F4 "RF_OUT" O R 10300 8150 50 
 $EndSheet
 $Sheet
-S 5650 4250 1600 800 
+S 5250 3650 1600 800 
 U 619AB779
 F0 "Bias Regulator (Amplifier)" 50
 F1 "Bias_regulator.sch" 50
+F2 "V_BIAS_BASE" O R 6850 4100 50 
+F3 "V_BIAS_COLLECTOR" O R 6850 3850 50 
 $EndSheet
 $Sheet
-S 5650 7400 1600 800 
+S 5250 6800 1600 800 
 U 619AD1F4
 F0 "Bias Regulator (Oscillator)" 50
 F1 "Bias_regulator.sch" 50
+F2 "V_BIAS_BASE" O R 6850 7250 50 
+F3 "V_BIAS_COLLECTOR" O R 6850 7000 50 
 $EndSheet
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 619D82BA
+P 3550 4950
+AR Path="/6196B9B8/619D82BA" Ref="J?"  Part="1" 
+AR Path="/619D82BA" Ref="J103"  Part="1" 
+F 0 "J103" H 3478 5188 50  0000 C CNN
+F 1 "SMA" H 3478 5097 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 3550 4950 50  0001 C CNN
+F 3 " ~" H 3550 4950 50  0001 C CNN
+	1    3550 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5150 3550 5400
+$Comp
+L power:GND #PWR?
+U 1 1 619D82C2
+P 3550 5400
+AR Path="/6196B9B8/619D82C2" Ref="#PWR?"  Part="1" 
+AR Path="/619D82C2" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 3550 5150 50  0001 C CNN
+F 1 "GND" H 3555 5227 50  0000 C CNN
+F 2 "" H 3550 5400 50  0001 C CNN
+F 3 "" H 3550 5400 50  0001 C CNN
+	1    3550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 619DBB21
+P 12300 4950
+AR Path="/6196B9B8/619DBB21" Ref="J?"  Part="1" 
+AR Path="/619DBB21" Ref="J105"  Part="1" 
+F 0 "J105" H 12400 4925 50  0000 L CNN
+F 1 "SMA" H 12400 4834 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 12300 4950 50  0001 C CNN
+F 3 " ~" H 12300 4950 50  0001 C CNN
+	1    12300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 5150 12300 5400
+$Comp
+L power:GND #PWR?
+U 1 1 619DBB28
+P 12300 5400
+AR Path="/6196B9B8/619DBB28" Ref="#PWR?"  Part="1" 
+AR Path="/619DBB28" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 12300 5150 50  0001 C CNN
+F 1 "GND" H 12305 5227 50  0000 C CNN
+F 2 "" H 12300 5400 50  0001 C CNN
+F 3 "" H 12300 5400 50  0001 C CNN
+	1    12300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 619E261A
+P 12300 8150
+AR Path="/6196B9B8/619E261A" Ref="J?"  Part="1" 
+AR Path="/619E261A" Ref="J106"  Part="1" 
+F 0 "J106" H 12400 8125 50  0000 L CNN
+F 1 "SMA" H 12400 8034 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 12300 8150 50  0001 C CNN
+F 3 " ~" H 12300 8150 50  0001 C CNN
+	1    12300 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 8350 12300 8600
+$Comp
+L power:GND #PWR?
+U 1 1 619E2621
+P 12300 8600
+AR Path="/6196B9B8/619E2621" Ref="#PWR?"  Part="1" 
+AR Path="/619E2621" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 12300 8350 50  0001 C CNN
+F 1 "GND" H 12305 8427 50  0000 C CNN
+F 2 "" H 12300 8600 50  0001 C CNN
+F 3 "" H 12300 8600 50  0001 C CNN
+	1    12300 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 8150 10300 8150
+Wire Wire Line
+	10300 4950 12100 4950
+Wire Wire Line
+	3750 4950 7500 4950
+Wire Wire Line
+	6850 4100 7500 4100
+Wire Wire Line
+	6850 3850 7500 3850
+Wire Wire Line
+	6850 7250 7500 7250
+Wire Wire Line
+	6850 7000 7500 7000
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 619EC903
+P 3550 2050
+AR Path="/6196B9B8/619EC903" Ref="J?"  Part="1" 
+AR Path="/619EC903" Ref="J102"  Part="1" 
+F 0 "J102" H 3478 2288 50  0000 C CNN
+F 1 "SMA" H 3478 2197 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 3550 2050 50  0001 C CNN
+F 3 " ~" H 3550 2050 50  0001 C CNN
+	1    3550 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2250 3550 2500
+$Comp
+L power:GND #PWR?
+U 1 1 619EC90A
+P 3550 2500
+AR Path="/6196B9B8/619EC90A" Ref="#PWR?"  Part="1" 
+AR Path="/619EC90A" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 3550 2250 50  0001 C CNN
+F 1 "GND" H 3555 2327 50  0000 C CNN
+F 2 "" H 3550 2500 50  0001 C CNN
+F 3 "" H 3550 2500 50  0001 C CNN
+	1    3550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 619EDEC2
+P 12300 2050
+AR Path="/6196B9B8/619EDEC2" Ref="J?"  Part="1" 
+AR Path="/619EDEC2" Ref="J104"  Part="1" 
+F 0 "J104" H 12400 2025 50  0000 L CNN
+F 1 "SMA" H 12400 1934 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 12300 2050 50  0001 C CNN
+F 3 " ~" H 12300 2050 50  0001 C CNN
+	1    12300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 2250 12300 2500
+$Comp
+L power:GND #PWR?
+U 1 1 619EDEC9
+P 12300 2500
+AR Path="/6196B9B8/619EDEC9" Ref="#PWR?"  Part="1" 
+AR Path="/619EDEC9" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 12300 2250 50  0001 C CNN
+F 1 "GND" H 12305 2327 50  0000 C CNN
+F 2 "" H 12300 2500 50  0001 C CNN
+F 3 "" H 12300 2500 50  0001 C CNN
+	1    12300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2050 8550 2050
+Wire Wire Line
+	9450 2050 12100 2050
+$Comp
+L Connector:Screw_Terminal_01x02 J101
+U 1 1 619F0AE6
+P 1200 1650
+F 0 "J101" H 1118 1417 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1118 1416 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1200 1650 50  0001 C CNN
+F 3 "~" H 1200 1650 50  0001 C CNN
+	1    1200 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1550 1600 1550
+Wire Wire Line
+	1600 1550 1600 1450
+Wire Wire Line
+	1400 1650 1600 1650
+Wire Wire Line
+	1600 1650 1600 1750
+$Comp
+L power:GND #PWR?
+U 1 1 619F54FB
+P 1600 1850
+AR Path="/6196B9B8/619F54FB" Ref="#PWR?"  Part="1" 
+AR Path="/619F54FB" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 1600 1600 50  0001 C CNN
+F 1 "GND" H 1605 1677 50  0000 C CNN
+F 2 "" H 1600 1850 50  0001 C CNN
+F 3 "" H 1600 1850 50  0001 C CNN
+	1    1600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 619F67C4
+P 1600 1350
+AR Path="/61A1F5E9/619F67C4" Ref="#PWR?"  Part="1" 
+AR Path="/619AB779/619F67C4" Ref="#PWR?"  Part="1" 
+AR Path="/619AD0EE/619F67C4" Ref="#PWR?"  Part="1" 
+AR Path="/619AD1F4/619F67C4" Ref="#PWR?"  Part="1" 
+AR Path="/619F67C4" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 1600 1200 50  0001 C CNN
+F 1 "+5V" H 1615 1523 50  0000 C CNN
+F 2 "" H 1600 1350 50  0001 C CNN
+F 3 "" H 1600 1350 50  0001 C CNN
+	1    1600 1350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  2450 2350 2450
+Wire Notes Line
+	2350 2450 2350 500 
+Text Notes 550  750  0    100  ~ 20
+Power Input
+Wire Notes Line
+	500  3100 16500 3100
+Wire Notes Line
+	16500 6200 500  6200
+Text Notes 2700 750  0    100  ~ 20
+Bandpass Filter
+Text Notes 750  3400 0    100  ~ 20
+Amplifier
+Text Notes 750  6550 0    100  ~ 20
+Oscillator
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61A0C16E
+P 1750 1450
+F 0 "#FLG0101" H 1750 1525 50  0001 C CNN
+F 1 "PWR_FLAG" V 1750 1578 50  0000 L CNN
+F 2 "" H 1750 1450 50  0001 C CNN
+F 3 "~" H 1750 1450 50  0001 C CNN
+	1    1750 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61A0CB7B
+P 1750 1750
+F 0 "#FLG0102" H 1750 1825 50  0001 C CNN
+F 1 "PWR_FLAG" V 1750 1878 50  0000 L CNN
+F 2 "" H 1750 1750 50  0001 C CNN
+F 3 "~" H 1750 1750 50  0001 C CNN
+	1    1750 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1750 1600 1750
+Connection ~ 1600 1750
+Wire Wire Line
+	1600 1750 1600 1850
+Wire Wire Line
+	1600 1450 1750 1450
+Connection ~ 1600 1450
+Wire Wire Line
+	1600 1450 1600 1350
+$Comp
+L EE514_Board:BPF-2 FL101
+U 1 1 61A0E4A6
+P 9000 2050
+F 0 "FL101" H 9000 2467 50  0000 C CNN
+F 1 "BPF-2" H 9000 2376 50  0000 C CNN
+F 2 "EE514 Board:Filter_2.0GHz_Bandpass_Edge-Coupled" H 9000 2050 50  0001 C CNN
+F 3 "" H 9000 2050 50  0001 C CNN
+	1    9000 2050
+	1    0    0    -1  
+$EndComp
+Text Label 8050 2050 0    50   ~ 0
+FILT_IN
+Text Label 9600 2050 0    50   ~ 0
+FILT_OUT
 $EndSCHEMATC

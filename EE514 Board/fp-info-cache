@@ -1,4 +1,4 @@
-19222630846372114
+19370110505038881
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50716,11 +50716,11 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 10
 EE514 Board
 C_1pF_Interdigital
+1 pF interdigital capacitor (Advanced Circuits FR4)
 
-
 0
-0
-0
+2
+2
 EE514 Board
 C_0603_1608Metric_Pad0.98x0.95mm_HandSolder
 
@@ -50730,10 +50730,10 @@ C_0603_1608Metric_Pad0.98x0.95mm_HandSolder
 2
 EE514 Board
 Filter_2.0GHz_Bandpass_Edge-Coupled
-
+2.0GHz center frequency, 6% bandwidth, edge-coupled filter (Advanced Circuits FR4)
 
 0
-8
+6
 3
 EE514 Board
 L_0603_1608Metric_Pad0.98x0.95mm_HandSolder
@@ -83065,6 +83065,132 @@ Varistor
 RV_Disc_D21.5mm_W11.4mm_P10mm
 Varistor, diameter 21.5mm, width 11.4mm, pitch 10mm
 varistor SIOV
+0
+2
+2
+irex_Aesthetic
+Logo_irex_2.5x2.8mm_Copper
+
+
+0
+0
+0
+irex_Aesthetic
+Logo_irex_2.5x2.8mm_Silk
+
+
+0
+0
+0
+irex_Aesthetic
+Logo_irex_5.0x5.5mm_Copper
+
+
+0
+0
+0
+irex_Aesthetic
+Logo_irex_5.0x5.5mm_Silk
+
+
+0
+0
+0
+irex_Aesthetic
+Logo_irex_10.0x11.1mm_Copper
+
+
+0
+0
+0
+irex_Aesthetic
+Logo_irex_10.0x11.1mm_Silk
+
+
+0
+0
+0
+irex_Button_Switch_SMD
+SW-PUSH-6x3.5mm_CK-PTS636SL43x_HandSolder
+
+
+0
+2
+2
+irex_Button_Switch_SMD
+SW_PUSH-12mm_Wuerth-430476085716_HandSolder
+SW PUSH 12mm http://katalog.we-online.de/em/datasheet/430476085716.pdf
+tact sw push 12mm
+0
+4
+2
+irex_Button_Switch_THT
+SW_CuK_L102021ML04Q_SPDT_Angled
+CuK sub miniature slide switch, L series, SPDT, right angle, https://www.ckswitches.com/media/1423/l.pdf
+switch SPDT slide
+0
+3
+3
+irex_Buzzer_Beeper
+Buzzer_Murata_PKM13EPYH4000-A0_D12.6mm_H6.9mm
+
+
+0
+2
+2
+irex_Connector_Audio
+Jack_3.5mm_CUI_SJ1-3523N_Horizontal
+
+
+0
+5
+5
+irex_Converter_DCDC
+CUI_DCDC-CONVERTER_PDME1-Sxx-S_1x4_P2.54mm_Drill1.0mm
+
+
+0
+4
+4
+irex_Display
+LCD-Generic-3.2in_89.30x55.04mm
+Generic 3.2" TFT LCD graphic display with touch and SD card breakouts
+LCD TFT 3.2 display
+0
+22
+18
+irex_Display
+LCD-Generic-3.2in_89.30x55.04mm_ReducedCourtyard
+Generic 3.2" TFT LCD graphic display with touch and SD card breakouts. Has courtyard only around mounting holes and headers
+LCD TFT 3.2 display
+0
+22
+18
+irex_Display
+LCD-Generic-3.5in_98.00x56.34mm
+Generic 3.5" TFT LCD graphic display with touch and SD card breakouts
+TFT LCD display graphic 3.5
+0
+22
+18
+irex_Fuse
+Fuseholder_Cylinder-5x20mm_Littlefuse_0PTF0078P_Horizontal_Open
+Littlefuse fuseholder for 5x20mm cylindrical fuses
+fuseholder fuse
+0
+2
+2
+irex_LED_SMD
+LED_Kingbright_AA3528V_3.5x2.8mm_handsolder
+Pink SMD LED, 20mA, Kingbright
+SMD LED Kingbright 
+0
+2
+2
+irex_NetTie
+NetTie-2_SMD_Pad8.0mils
+Net tie, 2 pin, 8.0mils round SMD pads
+net tie
 0
 2
 2

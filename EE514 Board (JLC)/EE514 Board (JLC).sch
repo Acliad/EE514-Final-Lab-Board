@@ -1,0 +1,281 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4100 2600 1300 550 
+U 619DA041
+F0 "Bias Regulator (Amplifier)" 50
+F1 "Bias_Regulator.sch" 50
+F2 "V_BIAS_BASE" O R 5400 3000 50 
+F3 "V_BIAS_COLLECTOR" O R 5400 2750 50 
+$EndSheet
+$Sheet
+S 5750 2600 1600 1200
+U 619F939D
+F0 "Amplifier" 50
+F1 "Amplifier.sch" 50
+F2 "V_BIAS_BASE" I L 5750 3000 50 
+F3 "V_BIAS_COLLECTOR" I L 5750 2750 50 
+F4 "RF_OUT" O R 7350 3500 50 
+F5 "RF_IN" I L 5750 3500 50 
+$EndSheet
+$Sheet
+S 4100 4850 1300 550 
+U 61A25C38
+F0 "Bias Regulator (Oscillator)" 50
+F1 "Bias_Regulator.sch" 50
+F2 "V_BIAS_BASE" O R 5400 5250 50 
+F3 "V_BIAS_COLLECTOR" O R 5400 5000 50 
+$EndSheet
+$Sheet
+S 5750 4850 1600 1200
+U 61A25C89
+F0 "Oscillator" 50
+F1 "Oscillator.sch" 50
+F2 "V_BASE_BIAS" I L 5750 5250 50 
+F3 "V_BASE_COLLECTOR" I L 5750 5000 50 
+F4 "RF_OUT" O R 7350 5800 50 
+$EndSheet
+Wire Wire Line
+	5400 5000 5750 5000
+Wire Wire Line
+	5400 5250 5750 5250
+Wire Wire Line
+	5400 3000 5750 3000
+Wire Wire Line
+	5750 2750 5400 2750
+$Comp
+L Connector:Screw_Terminal_01x02 J101
+U 1 1 61A58E13
+P 800 1400
+F 0 "J101" H 718 1525 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 718 1526 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 800 1400 50  0001 C CNN
+F 3 "~" H 800 1400 50  0001 C CNN
+	1    800  1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1400 1150 1400
+Wire Wire Line
+	1000 1500 1150 1500
+$Comp
+L power:GND #PWR0102
+U 1 1 61A5A3BA
+P 1150 1800
+F 0 "#PWR0102" H 1150 1550 50  0001 C CNN
+F 1 "GND" H 1155 1627 50  0000 C CNN
+F 2 "" H 1150 1800 50  0001 C CNN
+F 3 "" H 1150 1800 50  0001 C CNN
+	1    1150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 61A5A9D3
+P 1150 1100
+F 0 "#PWR0101" H 1150 950 50  0001 C CNN
+F 1 "+5V" H 1165 1273 50  0000 C CNN
+F 2 "" H 1150 1100 50  0001 C CNN
+F 3 "" H 1150 1100 50  0001 C CNN
+	1    1150 1100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2050 2150 2050 500 
+Text Notes 600  800  0    100  ~ 20
+Power Input
+$Comp
+L Connector:Conn_Coaxial J103
+U 1 1 61A5D45F
+P 2900 3500
+F 0 "J103" H 2900 3750 50  0000 C CNN
+F 1 "SMA" H 2900 3650 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 2900 3500 50  0001 C CNN
+F 3 " ~" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3500 7350 3500
+Wire Wire Line
+	5750 3500 3100 3500
+Wire Wire Line
+	7350 5800 8800 5800
+Wire Wire Line
+	2900 3700 2900 3850
+$Comp
+L power:GND #PWR0104
+U 1 1 61A636D2
+P 2900 3850
+F 0 "#PWR0104" H 2900 3600 50  0001 C CNN
+F 1 "GND" H 2905 3677 50  0000 C CNN
+F 2 "" H 2900 3850 50  0001 C CNN
+F 3 "" H 2900 3850 50  0001 C CNN
+	1    2900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3700 9000 3850
+$Comp
+L power:GND #PWR0106
+U 1 1 61A63D97
+P 9000 3850
+F 0 "#PWR0106" H 9000 3600 50  0001 C CNN
+F 1 "GND" H 9005 3677 50  0000 C CNN
+F 2 "" H 9000 3850 50  0001 C CNN
+F 3 "" H 9000 3850 50  0001 C CNN
+	1    9000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 6000 9000 6150
+$Comp
+L power:GND #PWR0107
+U 1 1 61A64315
+P 9000 6150
+F 0 "#PWR0107" H 9000 5900 50  0001 C CNN
+F 1 "GND" H 9005 5977 50  0000 C CNN
+F 2 "" H 9000 6150 50  0001 C CNN
+F 3 "" H 9000 6150 50  0001 C CNN
+	1    9000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J105
+U 1 1 61A64A88
+P 9000 3500
+F 0 "J105" H 9000 3750 50  0000 C CNN
+F 1 "SMA" H 9000 3650 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 9000 3500 50  0001 C CNN
+F 3 " ~" H 9000 3500 50  0001 C CNN
+	1    9000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J106
+U 1 1 61A65D8B
+P 9000 5800
+F 0 "J106" H 9000 6050 50  0000 C CNN
+F 1 "SMA" H 9000 5950 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 9000 5800 50  0001 C CNN
+F 3 " ~" H 9000 5800 50  0001 C CNN
+	1    9000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EE514_Board:BPF-2 FL101
+U 1 1 61A69A2A
+P 6500 1400
+F 0 "FL101" H 6500 1817 50  0000 C CNN
+F 1 "BPF-2" H 6500 1726 50  0000 C CNN
+F 2 "EE514 Board:Filter_2.0GHz_Bandpass_Edge-Coupled_JLC" H 6500 1050 50  0001 C CNN
+F 3 "" H 6500 1400 50  0001 C CNN
+	1    6500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J102
+U 1 1 61A6BE15
+P 2900 1400
+F 0 "J102" H 2900 1650 50  0000 C CNN
+F 1 "SMA" H 2900 1550 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 2900 1400 50  0001 C CNN
+F 3 " ~" H 2900 1400 50  0001 C CNN
+	1    2900 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1400 3100 1400
+Wire Wire Line
+	2900 1600 2900 1750
+$Comp
+L power:GND #PWR0103
+U 1 1 61A6BE1D
+P 2900 1750
+F 0 "#PWR0103" H 2900 1500 50  0001 C CNN
+F 1 "GND" H 2905 1577 50  0000 C CNN
+F 2 "" H 2900 1750 50  0001 C CNN
+F 3 "" H 2900 1750 50  0001 C CNN
+	1    2900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1400 6950 1400
+Wire Wire Line
+	9000 1600 9000 1750
+$Comp
+L power:GND #PWR0105
+U 1 1 61A6DCB2
+P 9000 1750
+F 0 "#PWR0105" H 9000 1500 50  0001 C CNN
+F 1 "GND" H 9005 1577 50  0000 C CNN
+F 2 "" H 9000 1750 50  0001 C CNN
+F 3 "" H 9000 1750 50  0001 C CNN
+	1    9000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J104
+U 1 1 61A6DCB8
+P 9000 1400
+F 0 "J104" H 9000 1650 50  0000 C CNN
+F 1 "SMA" H 9000 1550 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 9000 1400 50  0001 C CNN
+F 3 " ~" H 9000 1400 50  0001 C CNN
+	1    9000 1400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  2150 11200 2150
+Wire Notes Line
+	500  4450 11200 4450
+Wire Wire Line
+	1300 1250 1150 1250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61A7104E
+P 1300 1250
+F 0 "#FLG0101" H 1300 1325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1300 1378 50  0000 L CNN
+F 2 "" H 1300 1250 50  0001 C CNN
+F 3 "~" H 1300 1250 50  0001 C CNN
+	1    1300 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 1650 1300 1650
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61A711EC
+P 1300 1650
+F 0 "#FLG0102" H 1300 1725 50  0001 C CNN
+F 1 "PWR_FLAG" V 1300 1778 50  0000 L CNN
+F 2 "" H 1300 1650 50  0001 C CNN
+F 3 "~" H 1300 1650 50  0001 C CNN
+	1    1300 1650
+	0    1    1    0   
+$EndComp
+Connection ~ 1150 1250
+Wire Wire Line
+	1150 1250 1150 1100
+Wire Wire Line
+	1150 1250 1150 1400
+Connection ~ 1150 1650
+Wire Wire Line
+	1150 1650 1150 1800
+Wire Wire Line
+	1150 1500 1150 1650
+$EndSCHEMATC
